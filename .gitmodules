@@ -1,0 +1,3 @@
+[submodule "erc20_arbitrum_sepolia_deploy/airsns_erc20/lib/forge-std"]
+	path = erc20_arbitrum_sepolia_deploy/airsns_erc20/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
