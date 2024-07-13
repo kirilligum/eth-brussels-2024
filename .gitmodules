@@ -4,3 +4,9 @@
 [submodule "erc20_arbitrum_sepolia_deploy/airsns_erc20/lib/openzeppelin-contracts"]
 	path = erc20_arbitrum_sepolia_deploy/airsns_erc20/lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "review_summary/l3/l3/lib/forge-std"]
+	path = review_summary/l3/l3/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "review_summary/gal/lib/forge-std"]
+	path = review_summary/gal/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
