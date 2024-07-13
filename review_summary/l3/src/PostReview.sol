@@ -24,18 +24,19 @@ contract PostReview {
             rating: rating
         }));
 
-        // Communicate with Hyperlane
+        dispatchMessage(content, rating);
+
+        emit ReviewPosted(msg.sender, listingId, content, rating);
+    }
+
+    function dispatchMessage(string memory content, uint8 rating) internal {
         IMailbox mailbox = IMailbox("0xEf9F292fcEBC3848bF4bB92a96a04F9ECBb78E59");
         bytes32 messageId = mailbox.dispatch{value: msg.value}(
             97,
             "0x0000000000000000000000006489d13AcAd3B8dce4c5B31f375DE4f9451E7b38",
             bytes(abi.encodePacked("Review posted: ", content, " with rating: ", rating))
         );
-
-        emit ReviewPosted(msg.sender, listingId, content, rating);
     }
-
-    function getReviewsByListingId(uint256 listingId) public view returns (Review[] memory) {
         uint256 count = 0;
         for (uint256 i = 0; i < reviews.length; i++) {
             if (reviews[i].listingId == listingId) {
