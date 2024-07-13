@@ -1,5 +1,7 @@
 pragma solidity ^0.8.13;
 
+import "./IMailbox.sol";
+
 contract PostReview {
     struct Review {
         address reviewer;
@@ -21,6 +23,14 @@ contract PostReview {
             content: content,
             rating: rating
         }));
+
+        // Communicate with Hyperlane
+        IMailbox mailbox = IMailbox("0xEf9F292fcEBC3848bF4bB92a96a04F9ECBb78E59");
+        bytes32 messageId = mailbox.dispatch{value: msg.value}(
+            97,
+            "0x0000000000000000000000006489d13AcAd3B8dce4c5B31f375DE4f9451E7b38",
+            bytes(abi.encodePacked("Review posted: ", content, " with rating: ", rating))
+        );
 
         emit ReviewPosted(msg.sender, listingId, content, rating);
     }
