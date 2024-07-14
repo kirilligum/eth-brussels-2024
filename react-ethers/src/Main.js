@@ -28,27 +28,6 @@ const Main = () => {
         </div>
       )}
     </div>
-    <div className="min-h-screen flex flex-col">
-      <header className="flex justify-between items-center p-4 bg-transparent text-white">
-        <h1 className="text-2xl font-bold">Air Stack'n'Stay</h1>
-        <div className="flex items-center border border-gray-300 rounded-lg p-2 bg-white">
-          <span className="mr-2">🔍</span>
-          <input
-            type="text"
-            placeholder="Where do you want to stay?"
-            className="outline-none w-full"
-          />
-          <span className="ml-2">🏠</span>
-        </div>
-        <DynamicWidget />
-      </header>
-      <main className="flex-grow">
-        <Hero />
-        <Description />
-        <ImageGallery />
-        <Reviews />
-      </main>
-    </div>
   );
 }
 
