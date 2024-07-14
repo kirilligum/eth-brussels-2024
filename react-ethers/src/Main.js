@@ -2,11 +2,9 @@ import { DynamicWidget } from "@dynamic-labs/sdk-react-core";
 
 const Main = () => {
   return (
-    <>
-      <div className="absolute top-0 left-0 m-4">
-        <h1 className="text-white font-bold text-2xl">Air Stack'n'Stay</h1>
-      </div>
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 mt-4">
+    <div className="min-h-screen flex flex-col">
+      <header className="flex justify-between items-center p-4 bg-gray-800 text-white">
+        <h1 className="text-2xl font-bold">Air Stack'n'Stay</h1>
         <div className="flex items-center border border-gray-300 rounded-lg p-2 bg-white">
           <span className="mr-2">🔍</span>
           <input
@@ -16,10 +14,8 @@ const Main = () => {
           />
           <span className="ml-2">🏠</span>
         </div>
-      </div>
-      <div className="absolute top-0 right-0 m-4 flex items-center justify-center">
         <DynamicWidget />
-      </div>
+      </header>
       {/* <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black flex flex-col items-center justify-center text-white"> */}
       {/*   <div className="flex flex-col items-center justify-center text-center"> */}
       {/*     <div className="mb-6"> */}
@@ -43,7 +39,42 @@ const Main = () => {
       {/*     </a> */}
       {/*   </div> */}
       {/* </div> */}
-    </>
+      <main className="flex-grow">
+        <div className="flex">
+          <div className="w-3/5 p-4">
+            <p>Content for the first 60% column.</p>
+          </div>
+          <div className="w-2/5 p-4">
+            <p>Content for the first 40% column.</p>
+          </div>
+        </div>
+        <div className="flex">
+          <div className="w-3/5 p-4">
+            <p>Content for the second 60% column.</p>
+          </div>
+          <div className="w-2/5 p-4">
+            <p>Content for the second 40% column.</p>
+          </div>
+        </div>
+        <div className="w-full p-4">
+          <p>Full-width content for images.</p>
+        </div>
+      </main>
+      <footer className="bg-gray-800 text-white p-4 grid grid-cols-4 gap-4">
+        <div>
+          <p>Footer column 1</p>
+        </div>
+        <div>
+          <p>Footer column 2</p>
+        </div>
+        <div>
+          <p>Footer column 3</p>
+        </div>
+        <div>
+          <p>Footer column 4</p>
+        </div>
+      </footer>
+    </div>
   );
 }
 
