@@ -2,11 +2,11 @@ const Hero = () => {
   return (
     <div className="w-full p-4 flex">
       <div className="w-3/5">
-        <h2 className="text-3xl font-bold">Williamsburg Artistic Heaven</h2>
-        <p className="text-bright-green-500 text-xl font-semibold">$200/night</p>
-        <p className="text-gray-600">Location: Williamsburg, Brooklyn, NY</p>
-        <p className="text-gray-600">📶 500Mbps</p>
-        <ul className="list-disc list-inside text-gray-600">
+        <h2 className="text-4xl font-bold text-white text-left">Williamsburg Artistic Heaven</h2>
+        <p className="text-bright-green-500 text-2xl font-semibold text-left">$200/night</p>
+        <p className="text-white text-left">Location: Williamsburg, Brooklyn, NY</p>
+        <p className="text-white text-left">📶 500Mbps</p>
+        <ul className="list-disc list-inside text-white text-left">
           <li>Spacious and well-lit</li>
           <li>Close to public transport</li>
           <li>Great neighborhood</li>
