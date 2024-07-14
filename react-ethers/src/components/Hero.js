@@ -11,7 +11,7 @@ const Hero = () => {
           <li>Close to public transport</li>
           <li>Great neighborhood</li>
         </ul>
-        <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg">Book Now</button>
+        <button className="mt-4 px-4 py-2 bg-teal-500 text-white rounded-lg">Request & Stake</button>
       </div>
       <div className="w-2/5 p-4">
         <img src="/photos/PXL_20240223_112507349_1.png" alt="Image 1" className="mb-4" />
