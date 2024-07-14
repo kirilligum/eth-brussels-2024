@@ -32,13 +32,16 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 .absolute {
   position: absolute;
 }
+
 body {
   background-image: url('/bg.png');
   background-size: cover;
