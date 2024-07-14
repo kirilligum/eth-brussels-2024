@@ -3,7 +3,7 @@ import { DynamicWidget } from "@dynamic-labs/sdk-react-core";
 const Main = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center text-center">
+      <div className="absolute top-0 left-0 m-4">
         <DynamicWidget />
       </div>
       <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black flex flex-col items-center justify-center text-white">
