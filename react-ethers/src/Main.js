@@ -2,6 +2,7 @@ import { DynamicWidget } from "@dynamic-labs/sdk-react-core";
 import Hero from "./components/Hero";
 import Description from "./components/Description";
 import ImageGallery from "./components/ImageGallery";
+import Reviews from "./components/Reviews";
 
 const Main = () => {
   return (
@@ -21,13 +22,9 @@ const Main = () => {
       </header>
       <main className="flex-grow">
         <Hero />
-        <div className="flex w-full">
-          <Description />
-          <div className="w-2/5 p-4">
-            <p>Content for the second 40% column.</p>
-          </div>
-        </div>
+        <Description />
         <ImageGallery />
+        <Reviews />
       </main>
     </div>
   );

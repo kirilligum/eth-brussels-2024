@@ -15,7 +15,7 @@ const Hero = () => {
           <button className="mt-4 px-4 py-2 bg-teal-500 text-white rounded-lg w-auto">Request & Stake</button>
         </div>
       </div>
-      <div className="w-2/5 p-4">
+      <div className="w-2/5 p-4 flex flex-col justify-start">
         <img src="/photos/PXL_20240223_112507349_1.png" alt="Image 1" className="mb-4" />
         <img src="/photos/PXL_20220822_175054220_1.png" alt="Image 2" />
       </div>
