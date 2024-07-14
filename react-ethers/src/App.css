@@ -42,6 +42,12 @@
   position: absolute;
 }
 
+.app-title {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem; /* Adjust the size as needed */
+}
+
 body {
   background-image: url('../public/photos/bg.png');
   background-size: 100% auto;
