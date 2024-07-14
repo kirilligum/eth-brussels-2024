@@ -6,6 +6,17 @@ const Main = () => {
       <div className="absolute top-0 left-0 m-4">
         <h1 className="text-white font-bold text-2xl">Air Stack'n'Stay</h1>
       </div>
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 mt-4">
+        <div className="flex items-center border border-gray-300 rounded-lg p-2 bg-white">
+          <span className="mr-2">🔍</span>
+          <input
+            type="text"
+            placeholder="Where do you want to stay?"
+            className="outline-none w-full"
+          />
+          <span className="ml-2">🏠</span>
+        </div>
+      </div>
       <div className="absolute top-0 right-0 m-4 flex items-center justify-center">
         <DynamicWidget />
       </div>
