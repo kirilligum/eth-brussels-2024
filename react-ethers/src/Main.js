@@ -6,7 +6,7 @@ const Main = () => {
       <div className="absolute top-0 left-0 m-4">
         <h1 className="text-white font-bold text-2xl">Air Stack'n'Stay</h1>
       </div>
-      <div className="absolute top-0 right-0 m-4">
+      <div className="absolute top-0 right-0 m-4 flex items-center justify-center">
         <DynamicWidget />
       </div>
       {/* <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black flex flex-col items-center justify-center text-white"> */}
