@@ -3,7 +3,7 @@ import { DynamicWidget } from "@dynamic-labs/sdk-react-core";
 const Main = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="flex justify-between items-center p-4 bg-gray-800 text-white">
+      <header className="flex justify-between items-center p-4 bg-transparent text-white">
         <h1 className="text-2xl font-bold">Air Stack'n'Stay</h1>
         <div className="flex items-center border border-gray-300 rounded-lg p-2 bg-white">
           <span className="mr-2">🔍</span>
@@ -60,7 +60,7 @@ const Main = () => {
           <p>Full-width content for images.</p>
         </div>
       </main>
-      <footer className="bg-gray-800 text-white p-4 grid grid-cols-4 gap-4">
+      <footer className="bg-transparent text-white p-4 grid grid-cols-4 gap-4">
         <div>
           <p>Footer column 1</p>
         </div>
