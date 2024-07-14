@@ -1,4 +1,7 @@
 import { DynamicWidget } from "@dynamic-labs/sdk-react-core";
+import Hero from "./components/Hero";
+import Description from "./components/Description";
+import ImageGallery from "./components/ImageGallery";
 
 const Main = () => {
   return (
@@ -18,25 +21,19 @@ const Main = () => {
       </header>
       <main className="flex-grow">
         <div className="flex">
-          <div className="w-3/5 p-4">
-            <p>Content for the first 60% column.</p>
-          </div>
+          <Hero />
           <div className="w-2/5 p-4">
             <img src="/photos/PXL_20240223_112507349_1.png" alt="Image 1" className="mb-4" />
             <img src="/photos/PXL_20220822_175054220_1.png" alt="Image 2" />
           </div>
         </div>
         <div className="flex">
-          <div className="w-3/5 p-4">
-            <p>Content for the second 60% column.</p>
-          </div>
+          <Description />
           <div className="w-2/5 p-4">
             <p>Content for the second 40% column.</p>
           </div>
         </div>
-        <div className="w-full p-4">
-          <p>Full-width content for images.</p>
-        </div>
+        <ImageGallery />
       </main>
     </div>
   );
