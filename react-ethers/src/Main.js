@@ -4,7 +4,7 @@ const Main = () => {
   return (
     <>
       <div className="absolute top-0 left-0 m-4">
-        <h1 className="app-title">Air Stack'n'Stay</h1>
+        <h1 className="text-white font-bold text-2xl">Air Stack'n'Stay</h1>
       </div>
       <div className="absolute top-0 right-0 m-4">
         <DynamicWidget />
