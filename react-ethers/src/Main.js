@@ -8,7 +8,7 @@ const Main = () => {
   const { isAuthenticated } = useDynamicContext();
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className={`min-h-screen flex flex-col ${isAuthenticated ? 'bg-image' : 'bg-black'}`}>
       <header className="flex justify-between items-center p-4 bg-transparent text-white">
         <h1 className="text-2xl font-bold">Air Stack'n'Stay</h1>
         <DynamicWidget />

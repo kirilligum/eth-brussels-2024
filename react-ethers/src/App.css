@@ -41,11 +41,21 @@
 
 
 body {
-  background-color: black;
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-image {
+  background-image: url('../public/photos/bg.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 button {
   background-color: #38b2ac; /* teal-500 */
