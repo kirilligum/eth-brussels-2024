@@ -6,6 +6,7 @@ const Description = () => {
         Located in the heart of Williamsburg, it features high ceilings, large windows, and 
         an open floor plan. Perfect for those who appreciate a blend of contemporary style 
         and urban convenience.
+      </p>
     </div>
   );
 };
