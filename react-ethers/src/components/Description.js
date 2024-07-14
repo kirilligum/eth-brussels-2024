@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import 'react-dates/initialize';
-import { DateRangePicker } from 'react-dates';
-import 'react-dates/lib/css/_datepicker.css';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 const Description = () => {
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
-  const [focusedInput, setFocusedInput] = useState(null);
+  const [startDate, setStartDate] = useState(null);
+  const [endDate, setEndDate] = useState(null);
 
   return (
     <div className="w-full flex">
@@ -19,20 +19,17 @@ const Description = () => {
         </p>
       </div>
       <div className="w-2/5 p-4">
-        <DateRangePicker
-          startDate={startDate}
-          startDateId="your_unique_start_date_id"
-          endDate={endDate}
-          endDateId="your_unique_end_date_id"
-          onDatesChange={({ startDate, endDate }) => {
-            setStartDate(startDate);
-            setEndDate(endDate);
+        <DatePicker
+          selected={startDate}
+          onChange={(dates) => {
+            const [start, end] = dates;
+            setStartDate(start);
+            setEndDate(end);
           }}
-          focusedInput={focusedInput}
-          onFocusChange={focusedInput => setFocusedInput(focusedInput)}
-          displayFormat="MMM D, YYYY"
-          numberOfMonths={1}
-          isOutsideRange={() => false}
+          startDate={startDate}
+          endDate={endDate}
+          selectsRange
+          inline
         />
       </div>
     </div>
