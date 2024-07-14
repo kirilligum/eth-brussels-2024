@@ -21,7 +21,7 @@ const Main = () => {
       </header>
       <main className="flex-grow">
         <Hero />
-        <div className="flex">
+        <div className="flex w-full">
           <Description />
           <div className="w-2/5 p-4">
             <p>Content for the second 40% column.</p>
