@@ -3,6 +3,9 @@ import { DynamicWidget } from "@dynamic-labs/sdk-react-core";
 const Main = () => {
   return (
     <>
+      <div className="absolute top-0 left-0 m-4">
+        <h1>Air Stack'n'Stay</h1>
+      </div>
       <div className="absolute top-0 right-0 m-4">
         <DynamicWidget />
       </div>
