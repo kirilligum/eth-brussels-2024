@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="w-full p-4 flex">
+    <div className="w-full p-4 flex h-full">
       <div className="w-3/5 flex flex-col justify-between h-full">
         <div className="flex flex-col justify-between h-full">
           <h2 className="text-8xl font-bold text-white text-left">Williamsburg Artistic Heaven</h2>
