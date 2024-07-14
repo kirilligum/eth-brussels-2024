@@ -5,8 +5,6 @@ import 'react-datepicker/dist/react-datepicker.css';
 const Description = () => {
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
-  const [startDate, setStartDate] = useState(null);
-  const [endDate, setEndDate] = useState(null);
 
   return (
     <div className="w-full flex">
