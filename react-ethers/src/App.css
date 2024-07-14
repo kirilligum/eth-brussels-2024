@@ -43,7 +43,7 @@
 }
 
 body {
-  background-image: url('../public/bg.png');
+  background-image: url('../public/photos/bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
