@@ -1,6 +1,6 @@
 pragma solidity ^0.8.13;
 
-import "./IMailbox.sol";
+import {IMailbox} from "@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol";
 
 contract PostReview {
     struct Review {
@@ -55,6 +55,5 @@ contract PostReview {
         }
 
         return result;
-    }
     }
 }
