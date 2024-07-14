@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <div className="w-full p-4 flex">
-      <div className="w-3/5">
+      <div className="w-3/5 flex flex-col justify-between h-full">
         <h2 className="text-8xl font-bold text-white text-left">Williamsburg Artistic Heaven</h2>
         <p className="text-bright-green-500 text-4xl font-semibold text-left">$200/night</p>
         <p className="text-white text-2xl text-left">Location: Williamsburg, Brooklyn, NY</p>
