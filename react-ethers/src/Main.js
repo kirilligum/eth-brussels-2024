@@ -23,7 +23,7 @@ const Main = () => {
           </main>
         </>
       ) : (
-        <div className="flex-grow flex items-center justify-center">
+        <div className="flex-grow flex items-center justify-center text-white">
           You don't have enough reputation.
           {/* <DynamicWidget /> */}
         </div>
