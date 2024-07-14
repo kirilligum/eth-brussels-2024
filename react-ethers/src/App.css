@@ -44,7 +44,7 @@
 
 body {
   background-image: url('../public/photos/bg.png');
-  background-size: cover;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
