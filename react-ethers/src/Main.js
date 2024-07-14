@@ -20,13 +20,7 @@ const Main = () => {
         <DynamicWidget />
       </header>
       <main className="flex-grow">
-        <div className="flex">
-          <Hero />
-          <div className="w-2/5 p-4">
-            <img src="/photos/PXL_20240223_112507349_1.png" alt="Image 1" className="mb-4" />
-            <img src="/photos/PXL_20220822_175054220_1.png" alt="Image 2" />
-          </div>
-        </div>
+        <Hero />
         <div className="flex">
           <Description />
           <div className="w-2/5 p-4">
