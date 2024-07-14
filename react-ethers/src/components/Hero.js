@@ -9,7 +9,7 @@ const Hero = () => {
           <p className="text-white text-2xl text-left">📶 500Mbps</p>
         </div>
         <div className="flex flex-col justify-between h-full mt-4">
-          <ul className="list-disc list-inside text-white text-2xl text-left">
+          <ul className="list-disc list-inside text-white text-4xl text-left">
             <li>Spacious and well-lit</li>
             <li>Close to public transport</li>
             <li>Great neighborhood</li>
