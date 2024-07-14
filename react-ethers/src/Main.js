@@ -24,7 +24,8 @@ const Main = () => {
         </>
       ) : (
         <div className="flex-grow flex items-center justify-center">
-          <DynamicWidget />
+          You don't have enough reputation.
+          {/* <DynamicWidget /> */}
         </div>
       )}
     </div>
