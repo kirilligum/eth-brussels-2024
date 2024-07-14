@@ -7,6 +7,8 @@ const Hero = () => {
           <p className="text-bright-green-500 text-4xl font-semibold text-left">$200/night</p>
           <p className="text-white text-2xl text-left">Location: Williamsburg, Brooklyn, NY</p>
           <p className="text-white text-2xl text-left">📶 500Mbps</p>
+        </div>
+        <div className="flex flex-col justify-between h-full mt-4">
           <ul className="list-disc list-inside text-white text-2xl text-left">
             <li>Spacious and well-lit</li>
             <li>Close to public transport</li>
