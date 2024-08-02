@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@dynamic-labs/ethereum": "*",
+    "@dynamic-labs/ethereum": "^2.3.1",
     "@dynamic-labs/ethers-v5": "*",
-    "@dynamic-labs/sdk-react-core": "*",
+    "@dynamic-labs/sdk-react-core": "^2.3.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -13,6 +13,7 @@
     "react-datepicker": "^7.3.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "viem": "^2.17.3",
     "web-vitals": "^2.1.4"
   },
   "overrides": {
